@@ -23,4 +23,10 @@
     function onResume() {
         // TODO: This application has been reactivated. Restore application state here.
     };
+
+    function handleOpenURL(url) {
+        setTimeout(function () {
+            alert("received url: " + url);
+        }, 0);
+    }
 } )();
