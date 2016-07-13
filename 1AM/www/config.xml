@@ -81,6 +81,6 @@
 
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
   <gap:plugin name="nl.x-services.plugins.launchmyapp" spec="3.2.0" source="pgb">
-    <param name="URL_SCHEME" value="MaMétéo" />
+    <param name="URL_SCHEME" value="meteo" />
   </gap:plugin>  
 </widget>
