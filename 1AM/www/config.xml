@@ -79,5 +79,7 @@
   
   <preference name="Fullscreen" value="True" />
 
-  <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+  <gap:plugin name="cordova-plugin-geolocation" version="2.2.0" />
+  <gap:plugin name="cordova-plugin-compat" version="1.0.0" />
+
 </widget>
