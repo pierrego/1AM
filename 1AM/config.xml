@@ -13,17 +13,6 @@
   <content src="index.html" />
   <access origin="*" />
   
-  <preference name="SplashScreen" value="screen" />
-  
-  <!-- Support for Cordova 5.0.0 plugin system -->
-  <gap:plugin name="cordova-plugin-whitelist" version="1" />
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="tel:*" />
-  <allow-intent href="sms:*" />
-  <allow-intent href="mailto:*" />
-  <allow-intent href="geo:*" />
-  
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
@@ -91,6 +80,4 @@
   <preference name="Fullscreen" value="True" />
 
   <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-  <gap:plugin name="cordova-plugin-geolocation" version="2.2.0" />
-  <gap:plugin name="cordova-plugin-compat" version="1.0.0" />
 </widget>
