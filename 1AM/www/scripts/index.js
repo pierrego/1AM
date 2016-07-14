@@ -27,7 +27,15 @@
     function onResume() {
     };
 
-    function handleOpenURL(url) {
-        urlParam = url;
-    }
-} )();
+})();
+
+function handleOpenURL(url) {
+    var arrparams = url.match("meteo://(.*)$");
+    console.log("Params" + arrparams);
+
+    setTimeout(function () {
+        alert("received url: " + url);
+    }, 0);
+
+    $('#zip-code-input').val(arrparams[1]);
+}
