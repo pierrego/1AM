@@ -12,11 +12,7 @@
 
         $('#get-weather-btn').click(getWeatherWithZipCode);
 
-        if (urlParam) {
-            $('#zip-code-input').val(urlParam);
-            getWeatherWithZipCode();
-        }
-        else {
+        if (!urlParam) {
             getWeatherWithGeoLocation();
         }
     };
@@ -31,11 +27,10 @@
 
 function handleOpenURL(url) {
     var arrparams = url.match("meteo://(.*)$");
-    console.log("Params" + arrparams);
+    urlParam = arrparams[1]
 
-    setTimeout(function () {
-        alert("received url: " + url);
-    }, 0);
-
-    $('#zip-code-input').val(arrparams[1]);
+    if (urlParam) {
+        $('#zip-code-input').val(urlParam);
+        getWeatherWithZipCode();
+    }
 }
